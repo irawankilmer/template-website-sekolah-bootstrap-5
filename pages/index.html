@@ -3,121 +3,276 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="SMK Contoh Negeri 1 - Sekolah kejuruan unggulan yang mencetak generasi profesional dan siap kerja.">
   <title>SMK Contoh</title>
+  <link rel="icon" href="../dist/img/favicon.png" type="image/x-icon">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
   <link rel="stylesheet" href="../dist/css/styles.css">
+  <style>
+    .container-layout {
+      max-width: 1140px;
+      margin: 0 auto;
+      padding: 2rem 1rem;
+    }
+
+    .section-content {
+      border: 4px solid #0d6efd;
+      border-radius: 0.75rem;
+      padding: 1.5rem;
+    }
+
+    .two-cols {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 2rem;
+    }
+
+    .three-cols {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+
+    .bg-white { background-color: #ffffff; }
+    .bg-lightgray { background-color: #f8f9fa; }
+    .bg-softblue { background-color: #f0f7ff; }
+  </style>
+
 </head>
 <body>
-  <!-- Menu Top -->
-  <div class="top-bar bg-light py-2 d-none d-md-block small">
-    <div class="container d-flex justify-content-between align-items-center">
-      <div class="contact-info">
-        <span class="me-3"><i class="bi bi-envelope"></i> info@smkcontoh.sch.id</span>
-        <span><i class="bi bi-telephone"></i> (021) 1234567</span>
-      </div>
-      <div class="social-icons">
-        <a href="#" class="text-dark me-3"><i class="bi bi-facebook"></i></a>
-        <a href="#" class="text-dark me-3"><i class="bi bi-instagram"></i></a>
-        <a href="#" class="text-dark"><i class="bi bi-tiktok"></i></a>
+<!-- Menu Top -->
+<div class="top-bar bg-light py-2 d-none d-md-block small">
+  <div class="container d-flex justify-content-between align-items-center">
+    <div class="contact-info">
+      <span class="me-3"><i class="bi bi-envelope"></i> info@smkcontoh.sch.id</span>
+      <span><i class="bi bi-telephone"></i> (021) 1234567</span>
+    </div>
+    <div class="social-icons">
+      <a href="#" class="text-dark me-3"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="text-dark me-3"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="text-dark"><i class="bi bi-tiktok"></i></a>
+    </div>
+  </div>
+</div>
+
+<!-- Header -->
+<header class="py-4 border-bottom">
+  <div class="container">
+    <div class="d-flex align-items-center gap-3 flex-column flex-sm-row text-center text-sm-start">
+      <img src="https://png.pngtree.com/png-vector/20230306/ourmid/pngtree-scool-college-logo-victor-vector-png-image_6634445.png" alt="Logo SMK Contoh Negeri 1" width="80" class="img-fluid" />
+      <div>
+        <h1 class="h4 mb-1">SMK Contoh Negeri 1</h1>
+        <p class="text-muted fst-italic mb-0">"Mencetak Generasi Unggul dan Profesional"</p>
       </div>
     </div>
   </div>
+</header>
 
-  <!-- Header -->
-  <header class="py-4 border-bottom">
-    <div class="container">
-      <div class="d-flex align-items-center gap-3 flex-column flex-sm-row text-center text-sm-start">
-        <img src="https://png.pngtree.com/png-vector/20230306/ourmid/pngtree-scool-college-logo-victor-vector-png-image_6634445.png" alt="Logo Sekolah" width="80" />
-        <div>
-          <h1 class="h4 mb-1">SMK Contoh Negeri 1</h1>
-          <p class="text-muted fst-italic mb-0">"Mencetak Generasi Unggul dan Profesional"</p>
+<!-- Menu Utama -->
+<div class="strip-primary bg-primary"></div>
+<nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold text-dark" href="#">SMK Contoh</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center justify-content-lg-end" id="navbarNav">
+      <ul class="navbar-nav text-center text-lg-start">
+        <li class="nav-item"><a class="nav-link text-dark fw-semibold active" href="#">Beranda</a></li>
+        <li class="nav-item"><a class="nav-link text-dark fw-semibold" href="#">Profil</a></li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle text-dark fw-semibold" href="#" role="button" data-bs-toggle="dropdown">Akademik</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Kurikulum</a></li>
+            <li><a class="dropdown-item" href="#">Jurusan</a></li>
+            <li><a class="dropdown-item" href="#">Guru</a></li>
+          </ul>
+        </li>
+        <li class="nav-item"><a class="nav-link text-dark fw-semibold" href="#">Galeri</a></li>
+        <li class="nav-item"><a class="nav-link text-dark fw-semibold" href="#">Kontak</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!--Hero Slider -->
+<section class="hero">
+  <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+    <div class="carousel-inner">
+      <div class="carousel-item active" style="background-image: url('../dist/img/hero1.jpeg');">
+        <div class="overlay"></div>
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+          <h1>SMK Contoh Negeri 1</h1>
+          <p>"Mencetak Generasi Unggul dan Profesional"</p>
+          <a href="#" class="btn btn-primary btn-lg">Daftar Sekarang</a>
+        </div>
+      </div>
+      <div class="carousel-item" style="background-image: url('../dist/img/hero2.jpeg');">
+        <div class="overlay"></div>
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+          <h1>SMK Contoh Negeri 1</h1>
+          <p>"Mencetak Generasi Unggul dan Profesional"</p>
+          <a href="#" class="btn btn-primary btn-lg">Daftar Sekarang</a>
+        </div>
+      </div>
+      <div class="carousel-item" style="background-image: url('../dist/img/hero3.jpeg');">
+        <div class="overlay"></div>
+        <div class="carousel-caption d-flex flex-column justify-content-center align-items-center">
+          <h1>SMK Contoh Negeri 1</h1>
+          <p>"Mencetak Generasi Unggul dan Profesional"</p>
+          <a href="#" class="btn btn-primary btn-lg">Daftar Sekarang</a>
         </div>
       </div>
     </div>
-  </header>
+    <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+</section>
 
-  <!-- Menu Utama -->
-  <div class="strip-primary bg-primary"></div>
-  <nav class="navbar navbar-expand-lg bg-white shadow-sm sticky-top">
-    <div class="container">
-      <a class="navbar-brand fw-bold text-dark" href="#">SMK Contoh</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-center justify-content-lg-end" id="navbarNav">
-        <ul class="navbar-nav text-center text-lg-start">
-          <li class="nav-item"><a class="nav-link text-dark fw-semibold active" href="#">Beranda</a></li>
-          <li class="nav-item"><a class="nav-link text-dark fw-semibold" href="#">Profil</a></li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-dark fw-semibold" href="#" role="button" data-bs-toggle="dropdown">Akademik</a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="#">Kurikulum</a></li>
-              <li><a class="dropdown-item" href="#">Jurusan</a></li>
-              <li><a class="dropdown-item" href="#">Guru</a></li>
-            </ul>
-          </li>
-          <li class="nav-item"><a class="nav-link text-dark fw-semibold" href="#">Galeri</a></li>
-          <li class="nav-item"><a class="nav-link text-dark fw-semibold" href="#">Kontak</a></li>
+<!-- Sambutan Kepala Sekolah -->
+<section class="kepsek-section py-5">
+  <div class="container d-flex flex-column flex-md-row align-items-center gap-4">
+    <div class="kepsek-photo-wrapper flex-shrink-0">
+      <img src="../dist/img/kepala-sekolah.jpeg" alt="Kepala Sekolah" class="kepsek-photo" />
+    </div>
+    <div class="kepsek-text">
+      <h2 class="section-title">Sambutan Kepala Sekolah</h2>
+      <p>
+        Selamat datang di SMK Contoh Negeri 1. Kami berkomitmen mencetak generasi unggul yang siap menghadapi tantangan masa depan dengan keahlian dan karakter kuat. Terima kasih telah berkunjung dan mempercayakan pendidikan Anda kepada kami.
+      </p>
+      <p class="kepsek-name">Drs. Budi Santoso<br /><small>Kepala Sekolah</small></p>
+    </div>
+  </div>
+</section>
+
+<!--Program Unggulan-->
+<section class="program-unggulan py-5">
+  <div class="container">
+    <h2 class="section-title text-center mb-5">Program Unggulan Kami</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="program-card">
+          <h3>Tahfidz Qur'an</h3>
+          <p>Mengasah kemampuan menghafal dan memahami Al-Qur'an secara intensif dengan pengajar berkompeten.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="program-card">
+          <h3>Robotika dan Teknologi</h3>
+          <p>Program pembelajaran teknologi terkini yang membekali siswa dengan skill robotik dan coding.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="program-card">
+          <h3>Bahasa Inggris Intensif</h3>
+          <p>Kelas khusus bahasa Inggris untuk memperkuat kemampuan komunikasi internasional siswa.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="program-card">
+          <h3>Tahfidz Qur'an</h3>
+          <p>Mengasah kemampuan menghafal dan memahami Al-Qur'an secara intensif dengan pengajar berkompeten.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="program-card">
+          <h3>Robotika dan Teknologi</h3>
+          <p>Program pembelajaran teknologi terkini yang membekali siswa dengan skill robotik dan coding.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="program-card">
+          <h3>Bahasa Inggris Intensif</h3>
+          <p>Kelas khusus bahasa Inggris untuk memperkuat kemampuan komunikasi internasional siswa.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Baris 3 -->
+<section class="bg-white">
+  <div class="container-layout">
+    <div class="section-title">Program Unggulan | Berita | Testimoni</div>
+    <div class="section-content three-cols">
+      <div style="border: 2px dashed #0d6efd; height: 150px;">Program</div>
+      <div style="border: 2px dashed #0d6efd; height: 150px;">Berita</div>
+      <div style="border: 2px dashed #0d6efd; height: 150px;">Testimoni</div>
+    </div>
+  </div>
+</section>
+
+<!-- Baris 4 -->
+<section style="background-color: #f8f9fa;">
+  <div class="container-layout">
+    <div class="section-title">Galeri Sekolah</div>
+    <div class="section-content">
+      <div style="border: 2px dashed #0d6efd; height: 250px;">Galeri Foto/Video</div>
+    </div>
+  </div>
+</section>
+
+<!-- Baris 5 -->
+<section class="bg-white">
+  <div class="container-layout">
+    <div class="section-title">Agenda & Link Cepat</div>
+    <div class="section-content">
+      <div style="border: 2px dashed #0d6efd; height: 180px;">Agenda & CTA</div>
+    </div>
+  </div>
+</section>
+
+<!-- Strip Atas Footer -->
+<div class="strip-primary bg-primary"></div>
+
+<!-- Footer -->
+<footer class="bg-dark text-light pt-3">
+  <div class="container">
+    <div class="row text-start">
+      <div class="col-md-3">
+        <img src="https://png.pngtree.com/png-vector/20230306/ourmid/pngtree-scool-college-logo-victor-vector-png-image_6634445.png" alt="Logo SMK Contoh" width="80" class="img-fluid mb-3">
+        <p>SMK Contoh Negeri 1 adalah sekolah kejuruan yang berkomitmen mencetak lulusan unggul, berkarakter, dan siap kerja.</p>
+        <a href="#" class="text-decoration-none text-primary">Selengkapnya &raquo;</a>
+      </div>
+      <div class="col-md-3">
+        <h5>Populer</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-light text-decoration-none">Cara Mendaftar</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Info PPDB</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Jurusan Favorit</a></li>
         </ul>
       </div>
-    </div>
-  </nav>
-
-  <!-- Strip Atas Footer -->
-  <div class="strip-primary bg-primary"></div>
-
-  <!-- Footer -->
-  <footer class="bg-dark text-light pt-3">
-    <div class="container">
-      <div class="row text-start">
-        <div class="col-md-3">
-          <img src="https://png.pngtree.com/png-vector/20230306/ourmid/pngtree-scool-college-logo-victor-vector-png-image_6634445.png" alt="Logo" width="80" class="mb-3">
-          <p>SMK Contoh Negeri 1 adalah sekolah kejuruan yang berkomitmen mencetak lulusan unggul, berkarakter, dan siap kerja.</p>
-          <a href="#" class="text-decoration-none text-primary">Selengkapnya &raquo;</a>
-        </div>
-        <div class="col-md-3">
-          <h5>Populer</h5>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-light text-decoration-none">Cara Mendaftar</a></li>
-            <li><a href="#" class="text-light text-decoration-none">Info PPDB</a></li>
-            <li><a href="#" class="text-light text-decoration-none">Jurusan Favorit</a></li>
-            <li><a href="#" class="text-light text-decoration-none">Cara Mendaftar</a></li>
-            <li><a href="#" class="text-light text-decoration-none">Info PPDB</a></li>
-            <li><a href="#" class="text-light text-decoration-none">Jurusan Favorit</a></li>
-            <li><a href="#" class="text-light text-decoration-none">Cara Mendaftar</a></li>
-          </ul>
-        </div>
-        <div class="col-md-3">
-          <h5>Terbaru</h5>
-          <ul class="list-unstyled">
-            <li><a href="#" class="text-light text-decoration-none">Workshop Desain</a></li>
-            <li><a href="#" class="text-light text-decoration-none">Juara LKS 2025</a></li>
-            <li><a href="#" class="text-light text-decoration-none">Pelatihan Industri</a></li>
-            <li><a href="#" class="text-light text-decoration-none">Cara Mendaftar</a></li>
-            <li><a href="#" class="text-light text-decoration-none">Info PPDB</a></li>
-            <li><a href="#" class="text-light text-decoration-none">Jurusan Favorit</a></li>
-            <li><a href="#" class="text-light text-decoration-none">Jurusan Favorit</a></li>
-          </ul>
-        </div>
-        <div class="col-md-3">
-          <h5>Newsletter</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-          tempor incididunt ut labore et dolore magna aliqua.</p>
-          <form>
-            <div class="mb-2">
-              <input type="email" class="form-control" placeholder="Email Anda">
-            </div>
-            <button class="btn btn-primary btn-sm" type="submit">Berlangganan</button>
-          </form>
-        </div>
+      <div class="col-md-3">
+        <h5>Terbaru</h5>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-light text-decoration-none">Workshop Desain</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Juara LKS 2025</a></li>
+          <li><a href="#" class="text-light text-decoration-none">Pelatihan Industri</a></li>
+        </ul>
       </div>
-      <div class="footer-line"></div>
-      <p class="text-center mb-0 pb-3 small">&copy; 2025 SMK Contoh Negeri 1. All Rights Reserved.</p>
+      <div class="col-md-3">
+        <h5>Newsletter</h5>
+        <p>Dapatkan informasi terbaru dari SMK Contoh langsung ke email Anda.</p>
+        <form>
+          <div class="mb-2">
+            <input type="email" class="form-control" placeholder="Email Anda" required>
+          </div>
+          <button class="btn btn-primary btn-sm" type="submit">Berlangganan</button>
+        </form>
+      </div>
     </div>
-  </footer>
+    <div class="footer-line"></div>
+    <p class="text-center mb-0 pb-3 small">&copy; 2025 SMK Contoh Negeri 1. All Rights Reserved.</p>
+  </div>
+</footer>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
