@@ -1,0 +1,104 @@
+.navbar-nav .nav-link,
+.navbar-brand {
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+/* Default desktop (min-width: 992px) */
+@media (min-width: 992px) {
+  .navbar-nav .nav-link::before,
+  .navbar-brand::before {
+    content: '';
+    position: absolute;
+    top: -4px;
+    left: 0;
+    width: 100%;
+    height: calc(100% + 8px);
+    background: linear-gradient(180deg, #0d6efd, rgba(13, 110, 253, 0.8));
+    border-radius: 0.5rem 0.5rem 1rem 1rem;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.3s ease;
+    z-index: -1;
+  }
+
+  .navbar-nav .nav-link:hover::before,
+  .navbar-brand:hover::before,
+  .navbar-nav .nav-link.active::before {
+    transform: scaleY(1);
+  }
+
+  .navbar-nav .nav-link:hover,
+  .navbar-brand:hover,
+  .navbar-nav .nav-link.active {
+    color: #fff !important;
+  }
+
+  .navbar-nav .nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 12px;
+    background: white;
+    border-bottom-left-radius: 50% 100%;
+    border-bottom-right-radius: 50% 100%;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    z-index: -1;
+  }
+}
+
+/* Mobile dan tablet (max-width: 991.98px) */
+@media (max-width: 991.98px) {
+  .navbar-nav .nav-link::before,
+  .navbar-brand::before {
+    content: none;
+  }
+
+  .navbar-nav .nav-link,
+  .navbar-brand {
+    color: #212529 !important;
+    background-color: transparent !important;
+  }
+
+  .navbar-nav .nav-link:hover,
+  .navbar-nav .nav-link.active {
+    color: #0d6efd !important;
+    background-color: transparent !important;
+    position: relative;
+  }
+
+  .navbar-nav .nav-link.active::after,
+  .navbar-nav .nav-link:hover::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    width: 70%;
+    height: 3px;
+    background-color: #0d6efd;
+    border-radius: 2px 2px 0 0;
+    box-shadow: none;
+    transform: none;
+    z-index: 1;
+  }
+}
+
+.strip-primary {
+  height: 4px;
+  background-color: #0d6efd;
+}
+
+.navbar {
+  position: relative;
+  z-index: 10;
+}
+
+.footer-line {
+  border-top: 1px solid white;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+}
