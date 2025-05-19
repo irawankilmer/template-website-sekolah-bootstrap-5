@@ -282,4 +282,78 @@
   color: #495057;
 }
 
+.info-section {
+  background-color: #ffffff; /* putih agar selaras dengan pola */
+}
+
+.info-card {
+  background-color: #f8f9fa;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.12);
+}
+
+.info-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #0d6efd;
+  border-left: 4px solid #0d6efd;
+  padding-left: 0.5rem;
+}
+
+.galeri {
+  background-color: #f8f9fa;
+  padding: 4rem 0;
+}
+
+.galeri .section-title {
+  font-size: 2.25rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  color: #212529;
+  text-align: center;
+  position: relative;
+}
+
+.galeri-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.galeri-item {
+  overflow: hidden;
+  border-radius: 1rem;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  transition: transform 0.3s ease;
+}
+
+.galeri-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.galeri-item:hover img {
+  transform: scale(1.05);
+}
+
+.agenda-linkcepat {
+  background-color: #ffffff;
+}
+
+.section-title {
+  font-size: 1.75rem;
+  font-weight: 700;
+  border-left: 4px solid #0d6efd;
+  padding-left: 1rem;
+}
+
 /*End Home*/
